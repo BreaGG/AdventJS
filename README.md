@@ -6,13 +6,6 @@ Bienvenido a AdventJS, un emocionante proyecto creado por MiduDev que te desafia
 
 AdventJS es una iniciativa que combina la diversión festiva con el aprendizaje de JavaScript. Inspirado en el concepto de un calendario de Adviento, cada día abrirás una nueva "ventana" en este repositorio que revelará un ejercicio de programación. Estos ejercicios están diseñados para mejorar tus habilidades en JavaScript y desafiarte a pensar de manera creativa para resolver problemas.
 
-## ¿Cómo participar?
-
-1. 🌟 ¡Fork este repositorio! 
-2. 🎉 Abre una nueva ventana (carpeta) cada día.
-3. 💡 Lee la descripción del ejercicio y trabaja en la solución.
-4. 🚀 Comparte tu solución en la carpeta correspondiente.
-
 ## Estructura del Repositorio
 
 - **/day-1**: Contiene el ejercicio del primer día.
@@ -31,6 +24,6 @@ AdventJS es una iniciativa que combina la diversión festiva con el aprendizaje 
 
 ## Agradecimientos
 
-Gracias a MiduDev por la inspiración y la creación de AdventJS. ¡Que todos tengan un increíble y educativo Adviento!
+Gracias a MiduDev por la inspiración y la creación de AdventJS. ¡Que todos tengan unas feliz Adviento!
 
 ¡Diviértete programando en AdventJS! 🚀🎄

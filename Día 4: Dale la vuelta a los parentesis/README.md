@@ -4,7 +4,7 @@ Santa necesita que estos mensajes estén correctamente formateados. Tu tarea es 
 
 Eso sí, ten en cuenta que pueden existir paréntesis anidados, por lo que debes invertir los caracteres en el orden correcto.
 
-```
+```javascript
 const a = decode('hola (odnum)')
 console.log(a) // hola mundo
 
