@@ -1,24 +1,17 @@
-function decode(message) {
-    const stack = [];
+function decode(original, modified) {
+    if (original.length === modified.length) return ''
 
-    for (let i = 0; i < message.length; i++) {
-        const char = message[i];
-
-        if (char === '(') {
-            stack.push(i);
-        } else if (char === ')' && stack.length > 0) {
-            const openParenIndex = stack.pop();
-            const reversedSubstring = message.substring(openParenIndex + 1, i).split('').reverse().join('');
-
-            message = message.substring(0, openParenIndex) + reversedSubstring + message.substring(i + 1);
-
-            i = openParenIndex + reversedSubstring.length;
+    for (let i = 0; i < (original.length + 1); i++) {
+        if (!original.split('')[i]) {
+            return modified.split('')[i]
+        }
+        if (!modified.split('')[i]) {
+            return original.split('')[i]
+        }
+        if (original.split('')[i] != modified.split('')[i]) {
+            return (original.length > modified.length) ? original.split('')[i] : modified.split('')[i]
         }
     }
-
-    message = message.replace(/[\(\)]/g, '');
-
-    return message;
 }
 
 const a = decode('hola (odnum)');
