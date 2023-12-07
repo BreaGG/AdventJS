@@ -15,8 +15,15 @@ AdventJS es una iniciativa que combina la diversión festiva con el aprendizaje 
 
 ## Estructura del Repositorio
 
-  - **Día_N.js**: Solución al ejercicio.
-  - **README.md**: Descripción del reto.
+- **/day-1**: Contiene el ejercicio del primer día.
+  - **README.md**: Descripción del ejercicio.
+  - **solution.js**: Tu solución al ejercicio.
+
+- **/day-2**: Contiene el ejercicio del segundo día.
+  - **README.md**: Descripción del ejercicio.
+  - **solution.js**: Tu solución al ejercicio.
+
+*... y así sucesivamente para cada día.*
 
 ## Contribuciones
 
