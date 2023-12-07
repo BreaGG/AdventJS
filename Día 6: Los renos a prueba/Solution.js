@@ -1,28 +1,27 @@
 function maxDistance(movements) {
-    let currentPosition = 0;
+    let position = 0;
     let maxDistance = 0;
 
     for (let i = 0; i < movements.length; i++) {
-        const movement = movements[i];
+        const move = movements[i];
 
-        if (movement === '>') {
-            currentPosition++;
-        } else if (movement === '<') {
-            currentPosition--;
-        } else if (movement === '*') {
-            // Considera ambas opciones: avanzar y retroceder
-            const distanceForward = Math.abs(currentPosition + 1);
-            const distanceBackward = Math.abs(currentPosition - 1);
-
-            // Actualiza la máxima distancia considerando ambas opciones
-            maxDistance = Math.max(maxDistance, distanceForward, distanceBackward);
+        if (move === '>') {
+            position++;
+        } else if (move === '<') {
+            position--;
+        } else if (move === '*') {
+            position++;
+            const backwardPosition = position - 2;
+            maxDistance = Math.max(maxDistance, Math.abs(backwardPosition), Math.abs(position));
         }
+
+        maxDistance = Math.max(maxDistance, Math.abs(position));
     }
 
-    // Devuelve la máxima distancia en valor absoluto
-    return Math.abs(maxDistance);
+    return maxDistance;
 }
 
-// Ejemplo de uso:
-const result = maxDistance(">>*<");
-console.log(result); // Salida esperada: 2
+// Ejemplo de uso
+const ejemploMovimientos = ">>*<";
+const distanciaMaxima = maxDistance(ejemploMovimientos);
+console.log(distanciaMaxima);  // Debería imprimir 3
